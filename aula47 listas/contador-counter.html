@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: contador;
+            /* "counter-reset" define um contador de elementos zerado/resetado
+                o valor dessampropriedade é o nome do contador escolhido por vc mesmo
+            */ 
+        }
+
+        p::before{
+            content: counter(contador)": ";
+            /* "counter(contador)" avisa que o contador com o nome "contador" esta inserido ali*/
+  
+            
+            counter-increment: contador;
+            /*"counter-increment" serve para incrementar, de fato poder usar o contador */
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>HNTHATNTJJA5STGH</p>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consect</p>
+    <p>etur adipisicing elit. Magni sit et </p>
+    <p>excepturi. Similique modi quia maiore</p>
+    <p>snumquam minima? Aperiam, excepturi. </p>
+    <p>Accusantium aliquid voluptatibus odit </p>
+    <p>Lorem ipsum dolor, sit amet consect</p>
+    <p>etur adipisicing elit. Magni sit et </p>
+    <p>excepturi. Similique modi quia maiore</p>
+    <p>snumquam minima? Aperiam, excepturi. </p>
+    <p>Accusantium aliquid voluptatibus odit </p>
+    <p>Lorem ipsum dolor, sit amet consect</p>
+    <p>etur adipisicing elit. Magni sit et </p>
+    <p>excepturi. Similique modi quia maiore</p>
+    <p>snumquam minima? Aperiam, excepturi. </p>
+    <p>Accusantium aliquid voluptatibus odit </p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        /*um seletor de atributos, invés de usar classe ou id, adiciona css nos elementos baseado nos atributos*/
+        /*primeiro coloque a tag/elemento, depois entre colchetes coloque o atributo, depois abra e feche chaves(como em seletores normais)*/
+
+        /*
+        Podemos selecionar os elementos cujo valor do atributo seja EXATAMENTE, COMECE COM, TERMINE COM ou CONTENHA o valor buscado. 
+        sintaxe a seguir:
+
+        E[atributo="valor"]: elementos do tipo E cujo atributo seja igual a "valor".
+        E[atributo^="valor"]: elementos do tipo E cujo valor do atributo comece com "valor".
+        E[atributo$="valor"]: elementos do tipo E cujo valor do atributo termine "valor".
+        E[atributo*="valor"]: elementos do tipo E cujo valor do atributo contenha "valor".
+        */
+
+        p[title]{
+            background-color: #000000;
+            color: #ff0000;
+        }
+
+        a[href^="segundo"]{
+            background-color: #d3d3d3;
+            color: #000000;
+        }
+
+        a[href$="exemplo"]{
+            background-color: #000000;
+            color: #adff2f;
+        }
+
+        p[id*="quarto"]{
+            background-color: #3d3d3d;
+            color: #7fffd4;
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p title="exemplo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <p><a href="segundocaso">Quod earum natus harum porro dignissimos labore sint eu</a></p>
+
+        <p><a href="terceiroexemplo">repellendus consequatur. Et porro voluptates adipisci</a></p>
+
+        <p id="esteeoquartocaso">molestiae odit dolorem provident quos ad corporis.</p>
+
+
+        
+    </div>
+</body>
+</html>

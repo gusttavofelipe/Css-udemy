@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p#oi::after{
+            content: " meu";
+            background-color: lightgray;
+            font-family: 'Courier New', Courier, monospace;
+            /*::after (por padrão inline) adiciona um elemento usando o atributo "content" e faz a formatação para este mesmo elemento
+              o elemento é adicionado no final, após o conteudo da tag do seletor ter acabado*/
+        }
+
+        p#ola::after{
+            content: "OLA" ;
+            font-size: 2em;
+            color: red;
+        }
+
+        a::after{
+            content: "  oola";
+            color:blueviolet;
+            font-weight: bold;
+            font-size: 3em;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="oi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aperiam voluptates incidunt. Autem quo, modi tempora<p>
+        <p id="ola">vero adipisci ab consequuntur ea rerum repellat est, maxime, esse dignissimos labore molestias. Lorem ipsum dolo</p>
+         <a href="">impedit magni quidem architecto. Dolorum repellat nemo excepturi quasi voluptatibus esse magnam dolor, qui, eius exe</a>
+        
+</body>
+</html>
