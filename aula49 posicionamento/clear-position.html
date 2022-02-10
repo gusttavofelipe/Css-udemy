@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            float: left;
+        }
+
+        .div2{
+            clear: left;
+            /* 
+            "clear" especifica que outro elemento não poderá flutuar ao seu lado
+            left limpa a flutuação do lado esquerdo, nenhum elemento podera flutuar desse lado
+            right limpa a flutuação do lado direito, nenhum elemento podera flutuar desse lado
+            both limpa a flutuação do lado direito e esquerdo, nenhum elemento podera flutuar nesses lados
+            o elemento com "clear" pode ser movido pra baixo caso seja preciso
+            */
+        }
+
+        .div3{
+            border: 5px solid green;
+            position: relative; /* "position: relative;" define que os elementos filhos serão posicionados em relação a esse elemento
+                                    com isso o proprio elemento cujo a posição foi definida como relativa será posicionado em relação a si mesmo */
+        }
+
+        img{
+            position: absolute; /* "position: absolute;" define como um elemento pode ser posicionado em relação a um elemento
+            o posicionameto do elemento é dado pelas propriedades abaixo */
+            top: ;
+            right: ;
+            left: ;
+            bottom: ;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>My tittle</h3>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorem natus, quidem exercitationem modi quis maiores architecto ducimus ipsa, impedit voluptates excepturi earum pariatur perspiciatis, nulla perferendis aliquid odit a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti necessitatibus, ratione harum neque ducimus eos voluptatem, velit nemo, fugit cupiditate exercitationem perspiciatis ipsa suscipit deserunt quis voluptatibus beatae eligendi?
+    </p>
+    <div class="div1">
+        <h1>Aquario 1</h1>
+    </div>
+    <div class="div2">
+        <h1>Aquario 2</h1>
+    </div>
+    <div class="div3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam excepturi, deleniti consequuntur exercitationem, quis delectus vitae hic corporis numquam iste nam consectetur. Eum deleniti nesciunt itaque commodi illum omnis? Molestias? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ad sunt beatae et fugit incidunt architecto nemo distinctio voluptatum eum corporis repellat consectetur sapiente aliquid iste praese
+        <img src="img/mapa01.png" width="30px" height="15px" alt="">
+    </div>
+</body>
+</html>
