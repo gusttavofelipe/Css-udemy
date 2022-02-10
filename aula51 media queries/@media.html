@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #conteudo{
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: lightgray;
+        }
+
+        /* @media é usado para incluir propriedades/atributos CSS somente se uma determinada condição acontecer 
+           No exemplo abaixo "body" e "h1" terão suas cores mudadas caso a largura maxima da tela for de 500px
+        */
+        @media (max-width: 500px){
+            body{
+                background-color: rgb(55, 0, 255);
+            }
+
+            h1{
+                color: rgba(0, 0, 0, 0.534);
+            }
+        }
+
+        /* No exemplo abaixo "body" e "h1" terão suas cores mudadas caso a largura minima da tela for de 700px */ 
+
+        @media (min-width: 700px){
+            body{
+                background-color: #008000;
+            }
+
+            h1{
+                color: yellow;
+            }
+        }
+
+        /* No exemplo abaixo "body" e "h1" terão suas cores mudadas caso a largura minima da tela for de 1000px */ 
+
+        @media (min-width: 1000px){
+            body{
+                background-color: #ff0000;
+            }
+
+            h1{
+                color: darkmagenta;
+            }
+        }
+        
+        /* No exemplo abaixo a largura e altura da div #conteudo serão mudados quando a largura minima da 'tela' for de 1100px e a largura maxima for de 1200px
+           O operador logico "and" é usado para combinar propriedades/atributos alem desse tambem existem os operadores "not" e "only"   
+           
+           tambem  podemos especificar para qual tipo de media as propriedades de @media serão aplicadas:
+
+           screen - para visualização em telas quaisquer
+           print - para telas de impressão
+           speech - para sintetizadores de voz ou leitores de tela
+           all - para todos os tipos. (all é o valor padrão caso não tenha sido definido uma media type)
+
+        */
+
+        @media (min-width: 1100px ) and (max-width: 1200px ){
+            #conteudo{
+                width: 300px;
+                height: 500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="conteudo">
+        <h1>Meu conteudo</h1>
+    </div>
+
+</body>
+</html>
