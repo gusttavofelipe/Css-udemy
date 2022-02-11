@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .textodotooltip{
+            visibility: hidden;
+            width: 120px;
+            background-color: #808080;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 5px;
+            padding: 6px;
+
+        }
+        .tooltip:hover .textodotooltip{
+            visibility: visible;
+            /*toda vez que o mouse for passado encima do texto da div (class="tooltip") o texto do span (class="textodotooltip") terá sua visibilidade (visibility:) mudada de hidden (visibility: hidden) para visible (visibility: visible)
+            >>>>>> para que isso aconteça não se pode separar os seletores com virgula ","  */
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip" >Passe o mouse aqui
+        <span class="textodotooltip">Texto do tooltip</span>
+    </div>
+</body>
+</html>
