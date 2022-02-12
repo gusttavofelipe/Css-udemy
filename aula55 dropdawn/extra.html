@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .div1{
+            width: 171px;
+            height: 133px;
+        }
+
+        .div2{
+            display: none;
+            background-color: lightgray;
+            width: 430px;
+            height: 320px;
+           
+        }
+        p{
+            text-align: center;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.151);
+            margin-top: -4px;
+            padding: 15px;
+        }
+        .normal{
+            background-color: lightgray;
+            
+        }
+     
+        .div1:hover .div2{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1" >
+        <img class="normal" src="imagem/aranha.png" width="171px" height="133px" alt="">
+        <div class="div2">
+            <img src="imagem/aranha.png" width="430px" height="320px" alt="">
+            <p>Veja só esta imagem aumentada</p>
+        </div>
+    </div>
+</body>
+</html>
