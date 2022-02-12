@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        span{
+            background-color: rgb(0, 88, 34);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        span:hover{
+            cursor: pointer; /* muda o tipo do cursor */
+        }
+
+        a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        a:hover{
+            background-color: #e0e0e0;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          margin: 30px 30px 30px 30px;
+        }
+        
+        .dropdown-content {
+          display: none; /* display: none, faz com que o display, o conteudo não seja exibido */
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 133px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.281);
+          top: 24px;
+
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        </style>
+        
+</head>
+<body>
+    <div class="dropdown">
+        <span>Passe  mouse aqui</span>
+        <div class="dropdown-content">
+          <a href="">Link</a>
+          <a href="">Link</a>
+          <a href="">Link</a>
+          <a href="">Link</a>
+          <a href="">Link</a>
+        </div>
+      </div>
+</body>
+</html>
