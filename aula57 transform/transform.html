@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+
+            /* transform: permite modificar o espaço do objeto */
+
+            transform: translate(60px, 60px); /* "translate" move o elemento da sua posição atual nos eixo x e y (nessa ordem). valores negativos e outras unidades de medida são aceitos */
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div2{
+            transform: rotate(90deg); /* "rotate" rotaciona objeto usando graus como unidade de medida (deg). valores negativos são aceitos */
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div3{
+            transform: scale(170%, 140%); /* "scale" aumenta ou diminui o tamanho de um elemento de acordo com os parâmetros dados para largura e altura (nessa ordem). caeita porcentagem, numeros inteiros e decimais*/
+            margin-left: 70px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div4{
+            transform: scaleX(200%); /* aumenta e diminui o elemento no eixo x. (aceita apenas numeros inteiros e decimais e porcentagem)*/
+            margin-left: 50px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div5{
+            transform: scaleY(2); /* aumenta e diminui o elemento no eixo y. (aceita apenas numeros inteiros e decimais e porcentagem)*/
+            margin-left: 50px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div52{
+            transform: skew(20deg,39deg ); /* inclina um elemento ao longo do eixo X e y pelos ângulos fornecido (aceita apenas graus (deg))*/
+            margin-left: 50px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div6{
+            transform: skewX(20deg); /* inclina um elemento ao longo do eixo X pelo ângulo fornecido (aceita apenas graus (deg))*/
+            margin-left: 50px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .div7{
+            transform: skewY(20deg); /* inclina um elemento ao longo do eixo Y pelo ângulo fornecido (aceita apenas graus (deg))*/
+            margin-left: 50px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+            }
+
+            .div8{
+            transform: matrix(2, -3, -2, 2, 40, 100); /* combina todos os métodos de transform em um.(aceita apenas numeros inteiros e decimais)
+
+            Os parâmetros são na seguinte ordem: (scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+            */
+
+            margin-left: 50px;
+            width: 90px;
+            height: 60px;
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: center;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="div2">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br>
+
+    <div class="div3">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br>
+
+    <div class="div4">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br>
+
+    <div class="div5">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="div52">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br>
+
+    <div class="div6">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br>
+
+    <div class="div7">
+        <span>How i met your mother</span>
+    </div>
+
+    <br><br><br>
+
+    <div class="div8">
+        <span>How i met your mother</span>
+    </div>
+</body>
+
+</html>
