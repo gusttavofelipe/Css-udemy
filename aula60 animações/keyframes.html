@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            animation-name: animacao1;
+            animation-duration: 4s;
+        }
+
+        @keyframes animacao1{
+            from{background-color: red;}
+            to{background-color: yellow;}
+        }
+
+        #div2{
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            position: relative;
+            animation-name: animacao2;
+            animation-duration: 4s;
+            animation-delay: 2s; /*tempo que a animação vai esperar pra começar*/
+            animation-iteration-count: 3; /*define quanto tempo a animaçao vai ficar ativa*/
+            animation-direction: alternate;
+        }
+
+        @keyframes animacao2{
+            0%{background-color: red; left: 0px; top:0px;}
+            25%{background-color: yellow; left: 200px; top:0px;}
+            50%{background-color: pink; left: 200px; top:200px;}
+            75%{background-color: greenyellow; left: 0px; top:200px;}
+            100%{background-color: red; left: 0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+
+<div id="div2"></div>
+</body>
+</html>
