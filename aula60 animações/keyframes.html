@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: black;
+        }
+
         div{
             width: 100px;
             height: 100px;
             background-color: #ff0000;
-            animation-name: animacao1;
-            animation-duration: 4s;
+            animation-name: animacao1; /*nome da animação*/
+            animation-duration: 4s; /*duração da animação*/
         }
 
         @keyframes animacao1{
-            from{background-color: red;}
-            to{background-color: yellow;}
+            from{background-color: red;} /* "from" = de*/
+            to{background-color: yellow;} /* "to" = a*/
         }
 
         #div2{
@@ -25,17 +29,17 @@
             background-color: #ff0000;
             position: relative;
             animation-name: animacao2;
-            animation-duration: 4s;
-            animation-delay: 2s; /*tempo que a animação vai esperar pra começar*/
-            animation-iteration-count: 3; /*define quanto tempo a animaçao vai ficar ativa*/
-            animation-direction: alternate;
+            animation-duration: 3s;
+            animation-delay: 1s; /*tempo que a animação vai esperar pra começar*/
+            animation-iteration-count: 3; /*define quantas vezes a animação será feita*/
+            animation-direction: infinite; /* define de qual tipo será a animação*/
         }
 
         @keyframes animacao2{
             0%{background-color: red; left: 0px; top:0px;}
-            25%{background-color: yellow; left: 200px; top:0px;}
-            50%{background-color: pink; left: 200px; top:200px;}
-            75%{background-color: greenyellow; left: 0px; top:200px;}
+            25%{background-color: yellow; left: 200px; top:0px; width: 20px; height: 20px;}
+            50%{background-color: pink; left: 200px; top:200px;width: 10px; height: 10px;}
+            75%{background-color: greenyellow; left: 0px; top:200px; width: 0px; height: 0px;}
             100%{background-color: red; left: 0px; top:0px;}
         }
     </style>
