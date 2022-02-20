@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin-left: 20px;
+        }
+
+        p.test1{
+            
+            overflow: hidden;
+            text-overflow: clip; /* "text-overflow" define como o texto que vazou do paragrafo vai se comportar, pode ser cortado, mostrar reticências ou até mesmo exibir qualquer string definida pelo autor*/
+        }
+
+        p.test2{
+            width: 200px;
+            height: 20px;
+            overflow: hidden;
+            text-overflow:ellipsis;  /*em tese, corta o texto e adiciona retcencias*/
+        }
+
+        p.test3{
+           word-wrap: break-word; /*é usada para especificar se o navegador deve inserir ou não quebras de linha onde, normalmente, o texto vazaria de seu container*/
+
+        }
+            
+        p.test4{
+            word-break: break-all; /*quebra todas as palavras pra caber no elemento*/
+        }
+    </style>
+</head>
+<body>
+        <p class="test1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab obcaecati unde quia asperiores  animi maiores, vel impedit alias minus sed aperiam temporibus est voluptatibus nam? Eum.</p>
+   
+        <p class="test2">Lorem ipsum dolor sit amet qconsectetur adipisicing elit. Recusandae, omnis temporibus? Aearum sunt fugit, quos sed atque magni eligendi fuga minus. Reiciendis distinctio quia assumenda!</p>
+  
+        <p class="test3">Loraaaaaaaaaaaaaaaaaaaam ipsum dolor sit amet consectetur adipisicing elit. Corporis nulggggla magni dolorum aper dolores, tggquis quam, laborum amet asperna </p>
+   
+        <p class="test4">Lorem ipsum nsectetur adipisicing elit. Praesentium omnis sunt quam repellat quia dolorum molestias. Non soluta sed reiciendis corrupti culpa tenetur nobis incidunt laboriosam.</p>
+
+        
+    
+</body>
+</html>
